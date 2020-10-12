@@ -1,9 +1,10 @@
 {
   "name": "gatsby-starter-blog",
+  "title": "Bryan Paronto",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "The personal website and blog of a web developer named Bryan Paronto.",
+  "version": "5.1.0",
+  "author": "Bryan Paronto <bryan.paronto@pm.me>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -41,11 +42,19 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^6.2.2",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.14.2"
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.4",
+    "gatsby-plugin-emotion": "^4.3.13",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "prettier": "^1.14.2",
+    "twin.macro": "^1.10.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://bryanparonto.com/",
   "keywords": [
     "gatsby"
   ],
@@ -62,7 +71,6 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build"
   }
 }
